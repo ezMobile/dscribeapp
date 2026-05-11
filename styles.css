@@ -352,7 +352,7 @@ h3 {
 .screenshot-grid {
   display: grid;
   gap: 0.95rem;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: 1fr;
 }
 
 .screenshot-card {
@@ -481,5 +481,47 @@ h3 {
 @media (min-width: 1024px) {
   .card-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 739px) {
+  .header-wrap {
+    align-items: flex-start;
+  }
+
+  .site-header nav {
+    width: 100%;
+  }
+
+  .nav-list {
+    width: 100%;
+    justify-content: flex-start;
+    gap: 0.5rem;
+  }
+
+  .nav-list a {
+    font-size: 0.95rem;
+    padding: 0.34rem 0.55rem;
+  }
+
+  .hero-card {
+    padding: 1.5rem 0.95rem;
+  }
+
+  .button-row .btn {
+    width: 100%;
+    max-width: 320px;
+    text-align: center;
+  }
+
+  .hero-store-grid .store-card {
+    min-height: 0;
+    padding: 0.85rem;
+  }
+}
+
+@media (min-width: 560px) and (max-width: 739px) {
+  .screenshot-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
