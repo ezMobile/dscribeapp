@@ -23,6 +23,9 @@ dscribeWeb/
 `-- assets/
     |-- logo.png
     |-- favicon.ico
+    |-- qr/
+    |   |-- android-playstore-qr.svg
+    |   `-- ios-appstore-qr.svg
     `-- screenshots/
         |-- notes.png
         |-- todo.png
@@ -38,6 +41,8 @@ Copy your real image files to:
 
 - `assets/logo.png`
 - `assets/favicon.ico`
+- `assets/qr/android-playstore-qr.svg` (replace with real Android QR)
+- `assets/qr/ios-appstore-qr.svg` (replace with real iOS QR when App Store URL is available)
 - `assets/screenshots/notes.png`
 - `assets/screenshots/todo.png`
 - `assets/screenshots/reminders.png`
